@@ -1,11 +1,12 @@
 [providers]
   names = ["...", "node"]
 
+[phases.build]
+  cmds = ["npm install"]
+  
 [phases.setup]
   nixPkgs = ["...", "ffmpeg"]
 
-[phases.build]
-  cmds = ["npm install"]
 
 [start]
   cmd = ["docker", "run", "-it"]
