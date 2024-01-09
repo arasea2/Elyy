@@ -1,10 +1,10 @@
 providers = ["...", "node"]
 
 [phases.setup]
-nixPkgs = ["...", "ffmpeg", "imagemagick"]
+nixPkgs = ["...", "ffmpeg", "imagemagick", "webp"]
 
 [phases.build]
-cmds = ["npm install"]
+cmds = ["echo packages.json"]
 
 [start]
 cmd ["docker run -it"]
