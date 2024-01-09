@@ -1,6 +1,3 @@
-[providers]
-  names = ["...", "node"]
-
 [phases.build]
   cmds = ["npm install"]
 
