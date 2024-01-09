@@ -1,7 +1,4 @@
+providers = ["...", "node"]
+
 [phases.setup]
-
 nixPkgs = ["...", "ffmpeg", "imagemagick", "webp"]
-cmds = ["npm ci"]
-
-[start]
-cmd = "node index.js"
