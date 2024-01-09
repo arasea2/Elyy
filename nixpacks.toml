@@ -3,10 +3,6 @@
 
 [phases.build]
   cmds = ["npm install"]
-  
+
 [phases.setup]
   nixPkgs = ["...", "ffmpeg"]
-
-
-[start]
-  cmd = ["docker", "run", "-it"]
