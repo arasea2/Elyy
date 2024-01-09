@@ -2,7 +2,7 @@
   names = ["...", "node"]
 
 [phases.setup]
-  nixPkgs = ["...", "ffmpeg", "imagemagick", "webp"]
+  nixPkgs = ["...", "ffmpeg"]
 
 [phases.build]
   cmds = ["npm install"]
